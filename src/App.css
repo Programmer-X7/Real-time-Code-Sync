@@ -1,0 +1,142 @@
+/* Home page Style */
+.homePageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.formWrapper {
+  background: #282a36;
+  padding: 20px;
+  border-radius: 10px;
+  width: 450px;
+  max-width: 90%;
+}
+
+.homePageLogo {
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+.mainLabel {
+  margin: 0 0 20px 0;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBox {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 14px;
+  background: #eee;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.joinBtn {
+  background: #36e478;
+  width: 100px;
+  margin-left: auto;
+}
+
+.joinBtn:hover {
+  background: #13b451;
+}
+
+.createInfo {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.createNewBtn,
+footer a {
+  color: #4aee8a;
+  text-decoration: none;
+  border-bottom: 1px solid #4aee8a;
+  transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover,
+footer a:hover {
+  color: #13b451;
+  border-color: #13b451;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+
+/* Editor Page Style */
+.mainWrap {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  height: 100vh;
+}
+
+.aside {
+  background: #1c1e29;
+  padding: 16px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.asideInner {
+  flex: 1;
+}
+
+.logo {
+  border-bottom: 1px solid #424242;
+  padding-bottom: 10px;
+}
+
+.logoImage {
+  height: 60px;
+}
+
+.clientsList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.userName {
+  margin-top: 10px;
+}
+
+.leaveBtn {
+  margin-top: 20px;
+  background: #36e478;
+}
+
+.leaveBtn:hover {
+  background: #13b451;
+}
+
+.editorWrap {
+  background: #282c34;
+}
+
+.CodeMirror {
+  min-height: calc(100vh - 20px);
+  font-size: 20px;
+  line-height: 1.6;
+  padding-top: 20px;
+}
