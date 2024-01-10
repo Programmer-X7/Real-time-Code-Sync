@@ -7,6 +7,7 @@ import ACTIONS from "./src/Action.js";
 // Production
 import path from "path";
 import { fileURLToPath } from "url";
+import cors from "cors";
 
 dotenv.config();
 
@@ -15,6 +16,14 @@ const server = createServer(app);
 const io = new Server(server);
 
 // Production
+app.use(
+  cors({
+    origin: ["https://real-time-code-sync.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const staticPath = path.join(__dirname, "dist");
